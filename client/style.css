@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
 
+
+footer{
+	display: block;
+	}
+
 * {
   margin: 0;
   padding: 0;
@@ -219,7 +224,7 @@ header {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #616269;
   overflow: hidden;
 }
 
@@ -234,17 +239,13 @@ header {
   font-size: 17px;
 }
 
+
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -252,16 +253,129 @@ header {
 }
 
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+footer {
+		padding-top: 1.5em;
+	}
+
+#header footer {
+    padding-top: 1.5em;
+}
+
+
+/* Icons */
+
+	ul.icons {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding-left: 0.75em;
+		}
+
+		ul.icons a {
+			-moz-transition: background-color 0.25s ease-in-out;
+			-webkit-transition: background-color 0.25s ease-in-out;
+			-ms-transition: background-color 0.25s ease-in-out;
+			transition: background-color 0.25s ease-in-out;
+			display: inline-block;
+			width: 2.75em;
+			height: 2.75em;
+			line-height: 2.8em;
+			text-align: center;
+			border: 0;
+			box-shadow: inset 0 0 0 1px #e6e6e6;
+			border-radius: 100%;
+			color: #aaa;
+		}
+
+			ul.icons a:hover {
+				background: rgba(0, 0, 0, 0.025);
+			}
+
+
+
+/* Icons */
+
+	.icon {
+		text-decoration: none;
+		text-decoration: none;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.icon:before {
+			line-height: inhreit;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+/* Footer */
+
+	#footer {
+		position: relative;
+		margin: 0;
+		text-align: center;
+		padding: 4em 0 8em 0;
+		box-shadow: inset 0 1px 0 0 #e6e6e6;
+	}
+
+		#footer .copyright {
+			margin-top: 3em;
+			font-size: 0.8em;
+			color: #aaa;
+		}
+
+			#footer .copyright a {
+				color: inherit;
+			}
+
+		#footer ul.icons a {
+			box-shadow: inset 0 0 0 1px #d6d6d6;
+		}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
+ Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+  /* Icons */
+
+    ul.icons li {
+        padding-left: 0.35em;
+    }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* The "responsive" class is added to the topnav with JavaScript when
+the user clicks on the icon. This class makes the topnav look
+good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -274,4 +388,10 @@ header {
     display: block;
     text-align: left;
   }
+
+  /* Icons */
+
+    ul.icons li {
+        padding-left: 0.35em;
+    }
 }
