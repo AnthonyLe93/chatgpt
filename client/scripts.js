@@ -35,7 +35,7 @@ function generateUniqueId(){
     const randomNumber = Math.random();
     const hexadecimalString = randomNumber.toString(16);
 
-    return 'id=${timestamp}-${hexadecimalString}';
+    return `id=${timestamp}-${hexadecimalString}`;
 }
 
 function chatStripe (isAi, value, uniqueId){
